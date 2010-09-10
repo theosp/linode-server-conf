@@ -1,3 +1,5 @@
 sudo apt-get install libssl-dev zlib1g-dev libbz2-dev libattr1-dev libpcre3-dev libmysqlclient15-dev libfam-dev libldap2-dev libfcgi-dev libgdbm-dev libmemcache-dev liblua5.1-0-dev pkg-config uuid-dev libsqlite3-dev libxml2-dev libkrb5-dev libglib2.0-dev libaio-dev libfam0 memcached
 
 ./configure --program-prefix= --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-openssl --with-memcache --with-gdbm
+
+openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
